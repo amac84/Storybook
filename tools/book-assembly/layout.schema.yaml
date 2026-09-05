@@ -1,0 +1,13 @@
+layout:
+  book_number: integer
+  title: string
+  page_count: integer
+  spread_count: integer
+  trim: string
+  spreads:
+    - id: integer
+      pages: [integer]
+      text: string
+      image: path | null
+      text_safe_region: string
+      notes: string

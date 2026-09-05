@@ -1,0 +1,11 @@
+book_number: null
+status: proposed
+# proposed | approved_subset | rejected
+
+items: []
+# - fact:
+#   category: location | character | object | capability | world_rule | relationship | development | visual
+#   where_introduced:
+#   why_it_might_persist:
+#   recommend_promote: yes | no | ask
+#   risk:

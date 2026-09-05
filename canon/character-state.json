@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "description": "Approved persistent state. Temporary book state does not live here.",
+  "characters": {
+    "cove": {
+      "status": "personality-partial",
+      "developmental_notes": "Smart, curious, mischievous, funny, sweet, athletic, imaginative, focused, more cautious, loves to sing. Can get wound up.",
+      "current_challenges": [],
+      "emerging_strengths": [],
+      "lessons_learned": [],
+      "unresolved_themes": [],
+      "possessions": [],
+      "capabilities": [],
+      "fears": [],
+      "preferences": [],
+      "appearance_locked": false,
+      "last_approved_book": null,
+      "identity": {
+        "age_as_stated": 5,
+        "birthday": "September 25",
+        "birth_order": "older brother"
+      }
+    },
+    "mars": {
+      "status": "personality-partial",
+      "preferred_name": "Eden",
+      "also_likes": "Mars",
+      "developmental_notes": "Baby Hercules. Strong, most loving, stunt devil, imaginative, artistic and physical, smile that warms a room. Mutual protector with Cove.",
+      "current_challenges": [],
+      "emerging_strengths": [],
+      "lessons_learned": [],
+      "unresolved_themes": [],
+      "possessions": [],
+      "capabilities": [],
+      "fears": [],
+      "preferences": [],
+      "appearance_locked": false,
+      "last_approved_book": null,
+      "identity": {
+        "age_as_stated": 3,
+        "birthday": "November 28",
+        "birth_order": "younger brother",
+        "preferred_name": "Eden",
+        "printed_name": "both"
+      }
+    },
+    "dad": {
+      "status": "identity-partial",
+      "work_travel": true,
+      "work_travel_rule": "Sometimes away for work. Always comes back. Never missing at the end of a book.",
+      "appearance_locked": false
+    }
+  }
+}

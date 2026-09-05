@@ -1,0 +1,27 @@
+---
+description: Continuity, canon classes, and anti-drift rules
+globs: canon/**/*,books/**/context-packet.yaml,books/**/brief.yaml,books/**/book-report.yaml
+alwaysApply: true
+---
+
+# Continuity rules
+
+Continuity drift is a studio failure.
+
+Classify every fact:
+
+- **Canon**: approved, persistent, stored under `canon/` and character files.
+- **Temporary story state**: true during this book only. Expires at approval unless promoted.
+- **Visual incidental detail**: illustration-only unless promoted.
+- **Proposed canon**: appears in a manuscript or image and might persist. Lives in the book folder until approval.
+
+Rules:
+
+- Before outlining, compile a targeted context packet. Do not rely on chat history.
+- Previous six approved books get richer summaries. Older books exist as compressed canon.
+- Flag contradictions instead of silently “fixing” history.
+- Temporary mud, wet hair, a borrowed hat, or a one-book prop must not leak into later books unless promoted.
+- New locations, named characters, capabilities, and world rules are proposed canon.
+- After human approval, update ledger, timeline, relationships, character state, recurring elements, threads, locations, and decisions through `workflows/update-canon.md`.
+- Never edit `canon/` as a convenience during drafting.
+- If a story needs a fact that would constrain the whole series and the bible is still a placeholder, escalate one question.

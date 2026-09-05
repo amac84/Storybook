@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "description": "Approved relationships. Personalities are not implied.",
+  "pairs": [
+    {
+      "a": "cove",
+      "b": "mars",
+      "type": "siblings",
+      "status": "approved",
+      "notes": "Brothers. Cove is older, more cautious, smart/curious/mischievous/sweet. Eden/Mars is younger, baby Hercules, most loving, stunt devil. Despite Eden/Mars being small, they protect each other. Neither is only brain or only muscle."
+    },
+    {
+      "a": "mamma",
+      "b": "cove",
+      "type": "parent-child",
+      "status": "approved",
+      "notes": "Called Mamma. First name not given."
+    },
+    {
+      "a": "mamma",
+      "b": "mars",
+      "type": "parent-child",
+      "status": "approved",
+      "notes": "Called Mamma. First name not given."
+    },
+    {
+      "a": "dad",
+      "b": "cove",
+      "type": "parent-child",
+      "status": "approved",
+      "notes": "Called Dad. First name not given."
+    },
+    {
+      "a": "dad",
+      "b": "mars",
+      "type": "parent-child",
+      "status": "approved",
+      "notes": "Called Dad. First name not given."
+    },
+    {
+      "a": "mamma",
+      "b": "dad",
+      "type": "partners",
+      "status": "approved",
+      "notes": "Both in the house. Legal names not given."
+    },
+    {
+      "a": "holton",
+      "b": "jamie",
+      "type": "partners",
+      "status": "approved",
+      "notes": "Uncles. Gay, artistic. Not a joke or a sermon."
+    },
+    {
+      "a": "andria",
+      "b": "andrei",
+      "type": "partners",
+      "status": "approved",
+      "notes": "The Popovicis. Alex’s sister’s family. Parents of Anya, Adrien, Asher. Stories that include this household may be religious."
+    },
+    {
+      "a": "hayley",
+      "b": "nate",
+      "type": "partners",
+      "status": "approved",
+      "notes": "Parents of Archer, Ashton, Arlo."
+    },
+    {
+      "a": "hero",
+      "b": "connor",
+      "type": "partners",
+      "status": "approved",
+      "notes": "Aunty Hero and Uncle Connor. No children named."
+    }
+  ],
+  "households": [
+    {
+      "id": "cove-mars-home",
+      "members": ["mamma", "dad", "cove", "mars"],
+      "status": "approved"
+    },
+    {
+      "id": "popovici",
+      "surname": "Popovici",
+      "members": ["andria", "andrei", "anya", "adrien", "asher"],
+      "status": "approved",
+      "notes": "Alex’s sister’s family. Religious stories allowed when they appear."
+    },
+    {
+      "id": "hayley-nate",
+      "members": ["hayley", "nate", "archer", "ashton", "arlo"],
+      "status": "approved"
+    },
+    {
+      "id": "holton-jamie",
+      "members": ["holton", "jamie"],
+      "status": "approved"
+    },
+    {
+      "id": "hero-connor",
+      "members": ["hero", "connor"],
+      "status": "approved"
+    }
+  ]
+}

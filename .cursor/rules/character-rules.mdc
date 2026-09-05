@@ -1,0 +1,21 @@
+---
+description: Character consistency and voice rules
+globs: characters/**/*,canon/character-state.json,canon/relationships.json
+alwaysApply: false
+---
+
+# Character rules
+
+Characters are defined by files, not by vibes.
+
+- Read `characters/<id>/` before writing or critiquing that character.
+- Approved persistent facts live in `canon/`. Drafts may only propose new facts.
+- Do not change personality, appearance, history, relationships, possessions, capabilities, fears, or preferences unless the brief plus approval process explicitly does so.
+- Cove must not always be right. Mars must not be reduced to comic relief. Neither child should always solve the climax.
+- Children should sound like children of their stated age. If age is still `[CREATOR INPUT REQUIRED]`, do not write them as precocious moral instructors.
+- Voice files constrain vocabulary, favourite expressions, and things they would never say.
+- Strengths and flaws must both appear. A “lesson” that erases a flaw forever in one book is suspicious.
+- Supporting characters may be vivid, but they do not steal the protagonist’s meaningful choice.
+- New major recurring characters require escalation. Incidental named extras do not.
+- Visual rules in `characters/<id>/visual-rules.md` are binding for illustration and for prose descriptions of appearance.
+- Do not fill placeholder personality with invented permanent traits. Book-local behaviour is allowed if flagged as non-canon.

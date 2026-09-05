@@ -1,0 +1,62 @@
+book_number: null
+manuscript_version: manuscript-v1
+critic: editorial-critic
+
+overall_score: null
+engagement_score: null
+story_score: null
+character_score: null
+values_score: null
+read_aloud_score: null
+
+# Design-principle gates (aids, not math)
+would_still_be_good_without_lesson: null
+precise_developmental_objective: null
+portable_phrase_present: null
+portable_phrase: null
+strategy_is_doable: null
+see_try_own_present: null
+setback_present: null
+progressive_challenge: null
+reader_competence_moment: null
+transfer_present: null
+ending_does_not_explain_lesson: null
+child_sized_stakes: null
+parent_reread_value: null
+
+meaningful_protagonist_choice: null
+climax_driven_by_character_action: null
+lesson_demonstrated_through_story: null
+unresolved_major_plot_issues: 0
+preachiness_detected: false
+adult_solves_central_problem: false
+canon_violations_noted: 0
+character_violations_noted: 0
+
+standard:
+  story: null
+  truth: null
+  objective: null
+  strategy: null
+  memory: null
+  participation: null
+  competence: null
+  progression: null
+  failure: null
+  transfer: null
+  restraint: null
+  rereading: null
+  parent: null
+  real_life: null
+
+suggested_real_life_probe: null
+# One situation Alex can try days later. Not printed in the book.
+
+critical_issues: []
+major_issues: []
+minor_issues: []
+
+strongest_elements: []
+recommended_revision_priorities: []
+
+previous_pass_followup: []

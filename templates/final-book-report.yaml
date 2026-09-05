@@ -1,0 +1,45 @@
+book_number: null
+title: null
+status: ready_for_review
+# draft | manuscript_locked | illustrating | ready_for_review | approved | returned
+
+pages: 32
+word_count: null
+spread_count: 16
+
+editorial_scores:
+  engagement: null
+  story: null
+  character: null
+  values: null
+  read_aloud: null
+  overall: null
+
+continuity: PENDING
+visual_qa: PENDING
+
+primary_value: null
+developmental_objective_one_sentence: null
+portable_phrase: null
+suggested_real_life_probe: null
+character_development: []
+potential_new_canon: []
+
+quality_gates:
+  passed: false
+  failures: []
+quality_gate_overrides: []
+# - gate:
+#   reason:
+
+files:
+  manuscript: manuscript-final.md
+  outline: outline-final.yaml
+  storyboard: art/direction.yaml
+  illustrations: art/approved/
+  editorial: editorial-v2.yaml
+
+human_approval: pending
+# pending | approved | returned
+approved_at: null
+return_notes: null

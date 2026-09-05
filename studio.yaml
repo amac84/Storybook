@@ -1,0 +1,51 @@
+# Machine-readable studio configuration.
+# Philosophy lives in bible/. Workflow lives in AGENTS.md and workflows/.
+# This file is the small set of defaults scripts and agents should share.
+
+studio:
+  working_title: "Cove and Mars"
+  series_id: cove-and-mars
+  creator_name: Alex
+  creator_github: amac84
+  audience: "Initially two brothers, Cove and Eden/Mars. Architecture must later support additional characters and a broader published series."
+  family_code: bible/family-code.md
+  story_design: bible/story-design-principles.md
+  quality_standard: professional-childrens-publishing
+  default_spreads: 16
+  default_pages: 32
+  recent_book_window: 6
+  series_review_interval: 8
+  manuscript_owner: showrunner
+  language: en
+
+paths:
+  bible: bible
+  characters: characters
+  canon: canon
+  books: books
+  templates: templates
+  workflows: workflows
+
+quality_gates:
+  engagement_score_minimum: 85
+  story_score_minimum: 85
+  character_score_minimum: 90
+  values_score_minimum: 90
+  canon_violations: 0
+  character_violations: 0
+  unresolved_major_plot_issues: 0
+  meaningful_protagonist_choice: true
+  climax_driven_by_character_action: true
+  lesson_demonstrated_through_story: true
+  would_still_be_good_without_lesson: true
+  precise_developmental_objective: true
+  portable_phrase_present: true
+  setback_present: true
+  ending_does_not_explain_lesson: true
+
+notes:
+  - Scores are editorial aids, not mathematical truth.
+  - The Showrunner may override a gate only with a documented creative reason.
+  - Do not optimize mechanically for scores at the expense of originality.
+  - Do not force every design-principle checkbox if wonder would die; document the skip.
+  - Proposed canon is never authoritative until human approval.

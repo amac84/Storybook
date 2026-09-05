@@ -1,0 +1,42 @@
+# Book brief — copy to books/NNN/brief.yaml
+# Fill only fields that matter. Empty or omitted fields are fine.
+# A short goal is enough. The Showrunner/Architect will sharpen it
+# into Situation / Feeling / Belief / Strategy before outlining.
+
+book_number: null
+working_title: null
+
+goal: null
+# Prefer a situation, not a poster word.
+# Strong: Confidence when you don't initially know how to do something.
+# Weak: Be confident.
+
+adventure: null
+character_focus: null
+supporting_character_role: null
+tone: null
+special_elements: null
+
+# Optional — the studio will complete these if you only give a goal
+developmental_objective:
+  situation: null
+  feeling: null
+  belief: null
+  strategy: null
+portable_phrase: null
+# Leave null unless you already have the sentence you want the boys to keep.
+
+primary_value: null
+secondary_value: null
+story_goal: null
+characters_required: []
+adventure_seed: null
+setting: null
+fear_level: null
+desired_recurring_element: null
+story_thread_to_advance: null
+specific_requests: []
+avoid: []
+
+source: alex
+notes: null

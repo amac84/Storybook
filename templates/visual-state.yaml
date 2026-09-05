@@ -1,0 +1,15 @@
+# Temporary visual / story state for one book. Expires at approval unless promoted.
+
+book_number: null
+as_of_spread: 0
+characters: {}
+# cove:
+#   carrying: []
+#   clothing: {}
+#   temporary: {}
+environment:
+  time_of_day: null
+  weather: null
+  location: null
+props_in_play: []
+expired_after_approval: true

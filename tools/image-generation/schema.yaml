@@ -1,0 +1,27 @@
+IllustrationRequest:
+  spread: integer
+  book_number: integer
+  character_reference_images: [path]
+  art_style_reference: path | null
+  previous_spread_reference: path | null
+  location_reference: path | null
+  continuity_state: object
+  art_direction: object
+  negative_constraints: [string]
+  output_requirements:
+    aspect_ratio: string
+    text_safe_region: string
+    resolution: string
+    format: png
+
+IllustrationResult:
+  path: path
+  provider: string
+  version: integer
+  request_digest: string
+  notes: string
+
+VisualQAResult:
+  result: PASS | FAIL
+  reasons: [string]
+  regenerate: boolean
