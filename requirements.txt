@@ -1,0 +1,3 @@
+# Lightweight studio tooling. Do not add paid API SDKs here
+# unless the creator has explicitly approved a vendor.
+PyYAML>=6.0.2

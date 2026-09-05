@@ -1,0 +1,24 @@
+---
+description: Series-level operating rules for the Cove and Mars publishing studio
+alwaysApply: true
+---
+
+# Series rules
+
+This repository is a children’s publishing studio, not a one-off story generator.
+
+- The Showrunner in `AGENTS.md` owns workflow, prose, quality gates, and file order.
+- Specialist agents do narrow jobs. They do not rewrite each other’s work except through the documented revision loop.
+- The repository is the source of truth. Conversational memory is not canon.
+- Quality target: professional children’s publishing. Refuse generic AI-story texture.
+- Optimize for reread desire, character consistency, adventure, humour, warmth, demonstrated lessons, long-term growth, continuity, visual consistency, and autonomy after a brief.
+- Cove and Mars are the initial audience and protagonists. Do not hard-code the studio so a later character or published edition is impossible.
+- Do not write a book during architecture-only or bible-population work.
+- Do not invent major canon to fill `[CREATOR INPUT REQUIRED]` fields.
+- Lessons emerge through choices, problems, escalation, climax, and resolution. No end-of-book lectures.
+- Obey `bible/family-code.md`. Strength is service and restraint, not dominance. One primary lesson per book. Characters may fail; they must repair.
+- Obey `bible/story-design-principles.md`. Story first. Precise situation/feeling/belief/strategy. One portable child-sayable phrase. See → try → own. Setback. Transfer once. Do not explain the ending. Protect the magic.
+- Children must have agency. Adults do not arrive and solve the central problem.
+- Stories are conceived as illustrated spreads. Pictures carry information the prose should not duplicate.
+- Autonomous by default. Escalate only long-term canon, philosophy, or series decisions.
+- Proposed canon stays proposed until Alex approves the book.

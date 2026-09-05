@@ -1,0 +1,27 @@
+# Manuscript convention (the actual manuscript is Markdown, not YAML).
+# Each spread in manuscript-vN.md should look like this:
+
+# ## Spread 01
+# ### Text
+# Read-aloud story text.
+# ### Visual Story Information
+# What the picture communicates that the text should not repeat.
+# ### Narrative Purpose
+# Hook / desire / discovery / escalation / choice / climax / release.
+# ### Page-Turn Question
+# What makes a child want the next spread? Omit or write "resolved" on the last spread.
+# ### Reader Thinks (optional)
+# What the child can figure out before the character does. Use rarely. Then turn the page.
+
+required_headings:
+  - Text
+  - Visual Story Information
+  - Narrative Purpose
+  - Page-Turn Question
+
+notes:
+  - Do not write chapter prose.
+  - Do not narrate every visual detail.
+  - Prefer one clear page-turn per spread except the ending.
+  - Do not ask a question on every spread.
+  - End by showing change, not naming the moral.

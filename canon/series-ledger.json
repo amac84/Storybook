@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "series_id": "cove-and-mars",
+  "working_title": "Cove and Mars",
+  "status": "pre-production",
+  "books_approved": 0,
+  "next_book_number": 1,
+  "books_in_progress": [],
+  "approved_books": [],
+  "recent_book_window": 6,
+  "last_series_review_after_book": 0,
+  "series_review_interval": 8,
+  "notes": "Approved books receive a rich summary. After the recent window, older books are compressed into persistent canon and a short ledger entry."
+}

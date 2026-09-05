@@ -1,0 +1,58 @@
+# Context packet — compiled per book. Targeted, not a repo dump.
+
+book_number: null
+compiled_at: null
+compiler: canon-keeper
+
+brief_digest: {}
+
+characters: []
+# each:
+#   id:
+#   role_in_this_book:
+#   identity:
+#   personality:
+#   voice:
+#   behavioural_rules:
+#   development:
+#   visual:
+#   current_state:
+
+relationships: []
+
+values:
+  primary: null
+  secondary: []
+  definitions: []
+
+world_rules_relevant: []
+locations_relevant: []
+recurring_elements_relevant: []
+open_threads_relevant: []
+
+recent_books: []
+# previous six approved books, richer summaries
+
+older_canon_relevant: []
+# compressed facts from books before the recent window
+
+family_code: bible/family-code.md
+
+writing_principles:
+  - Use spread-based picture-book form
+  - One owner of prose
+  - Obey the McAulay Family Code and Story Design Principles
+  - Story first; one precise situation/feeling/belief/strategy; one portable phrase
+  - See → try → own; setback; transfer once; do not explain the ending
+  - Lesson demonstrated, not explained
+  - Confidence earned through struggle, not announced
+  - Child agency at the resolution
+
+creator_preferences_relevant: []
+
+fear_and_content_constraints: []
+
+gaps_and_local_inventions: []
+# facts that are still [CREATOR INPUT REQUIRED] or invented only for this book
+
+do_not_contradict: []

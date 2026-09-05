@@ -1,0 +1,22 @@
+---
+description: Illustration, visual continuity, and art-direction rules
+globs: books/**/art/**,bible/visual-style.md,characters/**/visual-rules.md,tools/image-generation/**
+alwaysApply: false
+---
+
+# Illustration rules
+
+These are illustrated picture books. Pictures do part of the storytelling.
+
+- Do not generate a full illustration pass until the manuscript is locked and quality gates have passed or a documented override exists.
+- Each spread needs art direction: purpose, cast, state, action, emotion, camera, props, continuity, text-safe area, must-include, must-not-include.
+- Images should add information, humour, or emotion that the text does not already say.
+- Leave reread details. Do not overload the frame.
+- Visual consistency is a system, not a prompt slogan. Pass canonical references, wardrobe, temporary state, previous-spread reference, and art direction.
+- Maintain `art/visual-state.yaml` during the book. It expires at the end unless promoted into canon.
+- Character identity, age, relative height, hair, clothing colours, and distinctive features are non-negotiable once defined.
+- Do not introduce extra named characters in the background.
+- No frightening or boundary-breaking imagery beyond `bible/fear-and-content-boundaries.md`.
+- Failed Visual QA images are eligible for automatic regeneration.
+- Do not hard-code an image vendor. Use `tools/image-generation/`.
+- Approved images only move to `art/approved/` after Visual QA pass or a documented exception.

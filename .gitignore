@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.env.*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+
+# Generated book artifacts that should not be committed by default
+books/**/art/generated/
+books/**/production/final/
+*.png
+*.jpg
+*.jpeg
+*.webp
+!characters/**/reference/**
+!books/**/art/references/**
+!books/**/art/approved/**
+
+# Local scratch
+.tmp/
+.cache/
+agent-tools/

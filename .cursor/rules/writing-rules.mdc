@@ -1,0 +1,34 @@
+---
+description: Prose, voice, and picture-book writing rules
+globs: books/**/*.md,bible/writing-style.md,bible/story-philosophy.md,templates/manuscript-spread.yaml
+alwaysApply: false
+---
+
+# Writing rules
+
+There is one owner of prose: the Showrunner, unless a later dedicated Author subagent is explicitly appointed for a cycle.
+
+- Write spread-by-spread manuscripts, not chapters.
+- Every spread needs text, visual story information, narrative purpose, and a page-turn question (the last spread may resolve rather than open a question).
+- Read-aloud first: rhythm, breath, and pleasure in the mouth. Avoid clunky clauses and stacked adjectives.
+- Prefer concrete action and image over named emotions and explanations.
+- Dialogue should sound like the specific child, not a wise miniature adult.
+- Humour should arise from character, surprise, and situation. Avoid winking at parents at the child’s expense.
+- Do not open with “Once upon a time” unless the brief deliberately asks for that ritual and the architect can justify it.
+- Do not end with a character summarizing the lesson.
+- Bind the brief to one precise objective (situation / feeling / belief / strategy), not “be confident.”
+- If confidence is in play, dramatize Choose → Attempt → Struggle → Adjust → Accomplish or recover. No effortless “I believe in myself.”
+- One portable phrase a child might say. Not a slogan, not a lecture.
+- See it → try it → own it. Include a setback. Transfer the idea once to a different problem.
+- End by showing the change. Never “and they learned that…”
+- Questions are rare. Reader-think beats use the page turn, not a quiz.
+- Repair is plot, not a last-page sorry.
+- Do not solve the plot with an adult, a lucky coincidence, or unexplained magic.
+- Do not make success effortless. Let the problem get harder.
+- Use exclamation marks sparingly. Do not ask a stack of rhetorical questions.
+- Avoid repetitive AI cadence: identical sentence stems, empty praise (“You’re so brave!”), and synonym-stuffed description.
+- Respect `bible/writing-style.md` and `bible/forbidden-patterns.md`.
+- If a field in the writing bible is `[CREATOR INPUT REQUIRED]`, keep prose simple, concrete, and unpretentious rather than inventing a house style.
+- The younger brother may be Eden or Mars on the page. Both are correct.
+- Do not state Cove’s or Eden/Mars’s ages in the story unless the brief is a birthday book.
+- Word count should fit a picture book meant to be read aloud in one sitting. Do not pad.

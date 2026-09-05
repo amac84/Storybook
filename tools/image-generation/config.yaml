@@ -1,0 +1,3 @@
+provider: unconfigured
+# When Alex approves a vendor, set provider to that adapter name.
+# Do not store API keys in this repository. Use environment variables.

@@ -1,0 +1,143 @@
+{
+  "version": 1,
+  "description": "Explicit decisions that constrain the series. Each item should say who decided and why.",
+  "decisions": [
+    {
+      "id": "DEC-0001",
+      "date": "2026-09-05",
+      "status": "approved",
+      "decision": "The repository is the source of truth. Conversational memory is not canon.",
+      "affects": [
+        "workflow"
+      ],
+      "decided_by": "architecture"
+    },
+    {
+      "id": "DEC-0002",
+      "date": "2026-09-05",
+      "status": "approved",
+      "decision": "Showrunner is the sole owner of prose unless later testing adds a dedicated Author subagent.",
+      "affects": [
+        "workflow"
+      ],
+      "decided_by": "architecture"
+    },
+    {
+      "id": "DEC-0003",
+      "date": "2026-09-05",
+      "status": "approved",
+      "decision": "Proposed canon is not authoritative until human approval of the book.",
+      "affects": [
+        "canon"
+      ],
+      "decided_by": "architecture"
+    },
+    {
+      "id": "DEC-0004",
+      "date": "2026-09-05",
+      "status": "approved",
+      "decision": "Do not invent detailed personalities, appearances, or major world rules to fill placeholders.",
+      "affects": [
+        "characters",
+        "world"
+      ],
+      "decided_by": "architecture"
+    },
+    {
+      "id": "DEC-0005",
+      "date": "2026-09-05",
+      "status": "approved",
+      "decision": "Cove and Mars/Eden are brothers. Cove is older (birthday 25 September, age stated as 5 on that date). Mars prefers Eden and also likes Mars (birthday 28 November, age stated as 3 on that date). File id remains mars until a rename is requested.",
+      "affects": ["characters"],
+      "decided_by": "Alex"
+    },
+    {
+      "id": "DEC-0006",
+      "date": "2026-09-05",
+      "status": "approved",
+      "decision": "Household adults are Mamma and Dad. Extended family exists as listed in characters/family.md. Existence does not require every relative to appear in every book.",
+      "affects": ["characters", "family"],
+      "decided_by": "Alex"
+    },
+    {
+      "id": "DEC-0007",
+      "date": "2026-09-05",
+      "status": "approved",
+      "decision": "Uncle Holton and Uncle Jamie are gay artistic uncles. They must never be written as a joke, a stereotype, or a moral lesson.",
+      "affects": ["characters"],
+      "decided_by": "Alex"
+    },
+    {
+      "id": "DEC-0008",
+      "date": "2026-09-05",
+      "status": "approved",
+      "decision": "The younger brother may be called Eden and Mars on the page. He prefers Eden and also likes Mars.",
+      "affects": ["characters", "writing"],
+      "decided_by": "Alex"
+    },
+    {
+      "id": "DEC-0009",
+      "date": "2026-09-05",
+      "status": "approved",
+      "decision": "Canon ages are Cove 5 and Eden/Mars 3. Do not mention ages in story prose unless the brief is a birthday book.",
+      "affects": ["writing", "characters"],
+      "decided_by": "Alex"
+    },
+    {
+      "id": "DEC-0010",
+      "date": "2026-09-05",
+      "status": "approved",
+      "decision": "Aunty Andria and Uncle Andrei are the Popovicis, Alex’s sister’s family. Stories that include them may be religious. Other books should not become faith stories unless a brief asks.",
+      "affects": ["family", "values"],
+      "decided_by": "Alex"
+    },
+    {
+      "id": "DEC-0011",
+      "date": "2026-09-05",
+      "status": "approved",
+      "decision": "Home is an invented setting. Details forthcoming. Do not invent a town name. No household pets. The boys may wander but not for multiple days. Dad goes away for work sometimes and always comes back.",
+      "affects": ["world", "family"],
+      "decided_by": "Alex"
+    },
+    {
+      "id": "DEC-0012",
+      "date": "2026-09-05",
+      "status": "approved",
+      "decision": "The previously unknown aunt is Aunty Hero, partner of Uncle Connor. No children named.",
+      "affects": ["family"],
+      "decided_by": "Alex"
+    },
+    {
+      "id": "DEC-0013",
+      "date": "2026-09-05",
+      "status": "approved",
+      "decision": "Cove is smart, curious, mischievous, funny, and sweet; he says melt-your-heart things, can get wound up, focuses extremely well, is athletic and very imaginative, is the more cautious brother, and loves to sing. Caution is not timidity and he is not only the brain.",
+      "affects": ["characters"],
+      "decided_by": "Alex"
+    },
+    {
+      "id": "DEC-0014",
+      "date": "2026-09-05",
+      "status": "approved",
+      "decision": "Eden/Mars is baby Hercules: strong, the most loving of the two, a stunt devil, imaginative, artistic and very physical, with a smile that warms a room. Despite being small, both brothers protect each other. He is not only cute, comic, or muscle.",
+      "affects": ["characters"],
+      "decided_by": "Alex"
+    },
+    {
+      "id": "DEC-0015",
+      "date": "2026-09-05",
+      "status": "approved",
+      "decision": "The McAulay Family Code (bible/family-code.md) is the governing instruction for every story. Strength means making others safer, stronger, and more included. Confidence is earned self-trust via Choose → Attempt → Struggle → Adjust → Recover. One primary lesson per book. Repair is action. Boys never hit girls. Consent and stop-means-stop are binding. The rejected-message list is binding.",
+      "affects": ["values", "writing", "world"],
+      "decided_by": "Alex"
+    },
+    {
+      "id": "DEC-0016",
+      "date": "2026-09-05",
+      "status": "approved",
+      "decision": "McAulay Story Design Principles (bible/story-design-principles.md) govern craft. Story first, curriculum second. Every book needs a precise situation/feeling/belief/strategy, one portable child-sayable phrase, see→try→own, a setback, one transfer to a different situation, and an ending that demonstrates rather than explains. The test is later real-life transfer, not whether the child can recite a moral.",
+      "affects": ["writing", "workflow"],
+      "decided_by": "Alex"
+    }
+  ]
+}

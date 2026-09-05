@@ -1,0 +1,87 @@
+# Story architecture — beat sheet, not prose.
+# Craft law: bible/story-design-principles.md
+
+book_number: null
+version: outline-v1
+working_title: null
+architect: story-architect
+
+logline: null
+why_a_child_will_care: null
+question_that_pulls_forward: null
+what_becomes_progressively_more_difficult: null
+protagonist_want: null
+meaningful_decision: null
+why_the_child_not_an_adult_matters: null
+how_the_lesson_affects_the_plot: null
+what_is_paid_off: null
+humour_and_surprise_opportunities: []
+
+# Sharpened objective — refuse broad leftovers
+developmental_objective:
+  situation: null
+  feeling: null
+  belief: null
+  strategy: null
+  family_code_value: null
+  objective_one_sentence: null
+
+portable_phrase: null
+
+see_try_own:
+  see: null
+  try: null
+  own: null
+
+rhythm:
+  desire: null
+  problem: null
+  first_attempt: null
+  discovery: null
+  practice: null
+  setback: null
+  independent_use: null
+  payoff: null
+  small_callback: null
+
+progressive_challenges: []
+setback: null
+transfer_moment: null
+reader_gets_ahead: null
+competence_moment: null
+child_sized_stakes: null
+ordinary_psychology_under_adventure: null
+ending_demonstrates_not_explains: true
+parent_layer: null
+questions: []
+
+primary_value: null
+lesson_path:
+  choice: null
+  problem: null
+  escalation: null
+  climax: null
+  resolution: null
+
+cast: []
+locations: []
+motifs: []
+setups_and_payoffs: []
+
+spreads:
+  - id: 1
+    purpose: hook
+    rhythm_stage: desire
+    text_intention: null
+    visual_only: null
+    page_turn_question: null
+    reader_thinks: null
+    humour: null
+    setup_or_payoff: null
+    emotion: null
+
+risks: []
+proposed_canon: []
+temporary_state: []
+showrunner_evaluation: null
+# Must include: would_still_be_a_story_without_the_lesson

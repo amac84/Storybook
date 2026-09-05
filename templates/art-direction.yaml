@@ -1,0 +1,30 @@
+book_number: null
+manuscript: manuscript-final.md
+art_director: art-director
+style_status: placeholder
+
+reference_needs: []
+proposed_visual_canon: []
+reread_trail: []
+
+spreads:
+  - id: 1
+    story_purpose: null
+    location: null
+    characters_visible: []
+    exact_character_state: {}
+    action: null
+    emotion: null
+    composition: null
+    camera_distance: null
+    camera_angle: null
+    important_props: []
+    continuity_from_earlier: null
+    background_storytelling: null
+    humour_opportunities: null
+    environmental_storytelling: null
+    text_safe_region: null
+    visual_focal_point: null
+    must_appear: []
+    must_not_appear: []
+    visual_only_story: null

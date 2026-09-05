@@ -1,0 +1,30 @@
+book_number: null
+spread: 1
+image_path: null
+result: FAIL
+reference_gap: false
+regenerate: true
+
+checks:
+  character_identity: null
+  age: null
+  relative_height: null
+  hairstyle: null
+  clothing: null
+  colours: null
+  facial_features: null
+  creature_anatomy: null
+  props: null
+  location: null
+  continuity: null
+  emotional_expression: null
+  action: null
+  composition: null
+  unintended_characters: null
+  missing_required_elements: null
+  inappropriate_content: null
+  image_defects: null
+  available_text_space: null
+
+reasons: []
+regenerate_guidance: null
