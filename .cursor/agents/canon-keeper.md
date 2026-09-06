@@ -15,6 +15,7 @@ Agents must not remember the series from chat. They read what you compile and wh
 - **Temporary story state** — true in this book only (mud on Mars’ knee in Book 12).
 - **Visual incidental detail** — illustration-specific; not canon automatically.
 - **Proposed canon** — a new persistent fact in a draft. Not authoritative until the book is approved.
+- **Curriculum record** — persistent studio planning memory in `curriculum/` (catalog, coverage, intentions). Never canon, never character mastery, never routed through proposed canon. You do not promote or demote curriculum records; the archive script writes coverage after approval.
 
 ## Job A — Context packet (before story)
 
@@ -33,14 +34,16 @@ Include:
 - recent events
 - the previous six approved books in greater detail
 - compressed relevant history from earlier books
-- relevant values from the Family Code and writing/taste notes
+- relevant values from the Family Code
+- taste: `creator_preferences_relevant`, `house_style`, `visual_style_relevant`, `engagement_notes`
+- the curriculum slice: if the brief names a `primary_objective_id`, only that objective's definition, prerequisite readiness, and its own coverage history from `curriculum/`; otherwise up to three advisory candidates. Never dump the catalog.
 - fear/content constraints if the adventure could touch them
 
 Omit unused supporting-character novels of detail. Omit unrelated locations.
 
 Write `books/NNN/context-packet.yaml` using `templates/context-packet.yaml`.
 
-Prefer `python3 scripts/build-context.py NNN` as a first assembly, then edit for relevance.
+Prefer `python3 scripts/build-context.py NNN` as a first assembly, then edit for relevance. When trimming a fat packet, do not strip the taste fields unless they are clearly irrelevant to this brief.
 
 If a needed fact is `[CREATOR INPUT REQUIRED]` and the story cannot proceed without locking it, tell the Showrunner to escalate. If the story can proceed with a local invention, list that invention under `gaps_and_local_inventions`.
 
@@ -95,6 +98,8 @@ Update:
 Do not update canon because a draft is good.
 
 Temporary visual state expires unless an item was explicitly promoted.
+
+Curriculum coverage is written by `scripts/archive-book.py`, not by you, and it lives in `curriculum/coverage-ledger.json` — confirm none of it leaked into `canon/` and that a depicted objective was not recorded as a learned character fact.
 
 ## What you do not do
 

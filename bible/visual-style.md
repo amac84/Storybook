@@ -2,6 +2,8 @@
 
 Status: placeholder. Do not lock an illustration look until Alex supplies references or a style decision.
 
+Filled sections compile into each book’s context packet as `visual_style_relevant`.
+
 Visual consistency is a system: reference images, written visual canon, current wardrobe, temporary state, previous-spread images, and art direction. Prompt wording alone is not enough.
 
 ## Medium and finish

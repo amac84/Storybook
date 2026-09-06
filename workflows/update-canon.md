@@ -13,6 +13,8 @@ Run only after approval, or when Alex makes an explicit series decision outside 
 - character-state patches listed in the book report
 - canon decisions for promoted world rules
 
+The same script separately records curriculum delivery to `curriculum/coverage-ledger.json` when the book declared objective IDs. That write is **not** a canon update — curriculum is studio planning memory (see `curriculum/README.md`).
+
 ## Keeper review
 
 The Canon Keeper then checks:
@@ -22,6 +24,7 @@ The Canon Keeper then checks:
 - open threads closed or created correctly
 - character development files got a growth-log row
 - visual incidental details were not promoted by accident
+- no curriculum coverage data was written into `canon/` (it belongs in `curriculum/`), and no coverage entry was treated as character mastery
 
 ## Explicit series decisions
 

@@ -21,7 +21,7 @@ An agent that just invented the plot must not be the only judge of that plot.
 
 - manuscript or outline
 - `brief.yaml` and the outline’s `developmental_objective` / `portable_phrase`
-- `context-packet.yaml`
+- `context-packet.yaml` — judge voice and humour against `house_style` and `creator_preferences_relevant`; judge reread/participation against `engagement_notes`
 - `bible/story-design-principles.md`
 - `bible/family-code.md`
 - `bible/forbidden-patterns.md`
@@ -65,11 +65,14 @@ Watch specifically for:
 
 - broad lesson (“be confident”) instead of a situation
 - curriculum-first plotting
+- if the packet has a `curriculum.selected_objective`: the manuscript drifting to a different objective, or dramatizing one of its listed `common_misconceptions`
 - strategy that works perfectly the first time
 - “And they learned that…” endings
 - questions on every spread
 - parents made foolish so children look clever
 - more than one primary lesson
+- a competent generic voice that ignores filled `house_style` or north-star bullets in the packet
+- humour or pacing Alex has already recorded as a thing to avoid
 
 ## Scoring
 

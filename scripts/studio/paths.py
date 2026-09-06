@@ -12,6 +12,12 @@ TEMPLATES = ROOT / "templates"
 STUDIO_CONFIG = ROOT / "studio.yaml"
 LEDGER = CANON / "series-ledger.json"
 
+# Persistent studio planning memory — NOT canon. See curriculum/README.md.
+CURRICULUM = ROOT / "curriculum"
+CURRICULUM_CATALOG = CURRICULUM / "catalog.yaml"
+CURRICULUM_COVERAGE = CURRICULUM / "coverage-ledger.json"
+CURRICULUM_INTENTIONS = CURRICULUM / "intentions.yaml"
+
 
 def book_id(number: int | str) -> str:
     return f"{int(number):03d}"

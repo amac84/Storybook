@@ -1,0 +1,45 @@
+# Curriculum objective contract — the shape of one entry in curriculum/catalog.yaml.
+# This is a template. Do not fill it with invented content; objectives are
+# creator-approved series planning facts.
+#
+# ID rules: stable, unique, never reused. Format OBJ-<domain>-<slug>.
+
+id: null                      # e.g. OBJ-courage-first-try
+status: active                # active | retired  (retired IDs stay resolvable, never reused)
+domain: null                  # domain id from catalog domains list
+
+label: null                   # short human name
+family_code_values: []        # value names from bible/values-and-principles.md (reference, not redefinition)
+
+age_fit:
+  minimum_age: null           # youngest age this objective lands for
+  notes: null                 # developmental-fit notes
+
+# The precise target, same vocabulary as bible/story-design-principles.md
+developmental_objective:
+  situation: null             # when does this apply
+  feeling: null               # what the child feels in that situation
+  belief: null                # the belief the story plants
+  strategy: null              # the concrete, child-sized strategy
+
+prerequisites: []             # objective IDs that should usually be depicted first
+
+observable_story_behaviours: []
+# what a character visibly does when the objective is working — behaviours, not speeches
+
+common_misconceptions: []
+# wrong versions a story must not accidentally teach
+
+story_affordances: []
+# kinds of situations/plots where this objective can surface naturally
+
+transfer_opportunities: []
+# different problem shapes where the same idea can reappear (for transfer beats)
+
+portable_phrase_examples: []
+# child-sayable candidate phrases; a book may coin its own
+
+revisit_guidance: null
+# spacing/repetition intent, e.g. "worth revisiting in varied settings"
+
+notes: null

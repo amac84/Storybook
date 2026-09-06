@@ -14,6 +14,8 @@ After every 8–10 approved books (`studio.yaml` `series_review_interval`, defau
 
 Evaluate repetition, role balance, adult overuse, location diversity, emotional evolution, overdue mysteries, formula risk, and beloved elements.
 
+For value/objective coverage, read `curriculum/coverage-ledger.json` and `python3 scripts/curriculum-status.py` instead of inferring from ledger strings. Write coverage recommendations (priorities, deferrals, spacing notes) into `curriculum/intentions.yaml` — they are advisory hints for future briefs, not canon.
+
 Produce recommendations for **future** briefs. Do not rewrite old books unless Alex asks.
 
 ## Output

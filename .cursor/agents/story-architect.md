@@ -14,11 +14,13 @@ The Showrunner will evaluate your architecture and may send it back.
 ## Inputs
 
 - `brief.yaml`
-- `context-packet.yaml`
+- `context-packet.yaml` — including `house_style`, `creator_preferences_relevant`, `engagement_notes`, and `visual_style_relevant`. These constrain tone, humour, page-turn flavour, and what pictures must do. Do not ignore them because you are “only doing structure.”
 - `bible/story-design-principles.md` (craft)
 - `bible/family-code.md` and the named value in `bible/values-and-principles.md`
 - character personality summaries
 - `bible/forbidden-patterns.md`, fear notes
+
+If the packet’s taste fields are empty or marked placeholder, keep the outline simple and concrete. Do not invent a house voice, visual medium, or comparable-title pose to fill the gap.
 
 Do not invent series canon to paper over `[CREATOR INPUT REQUIRED]`.
 
@@ -27,6 +29,8 @@ Do not invent series canon to paper over `[CREATOR INPUT REQUIRED]`.
 Turn Alex’s (often short) goal into an **interesting story** that secretly teaches one precise idea.
 
 **Do not start from the curriculum.** Start from a want the boys would actually have. Then let the objective grow out of the trouble.
+
+If the brief names a `primary_objective_id`, the context packet's `curriculum.selected_objective` slice is your precise target: use its situation/feeling/belief/strategy, avoid its listed misconceptions, and consider its transfer opportunities for the transfer beat. Echo the ID in the outline's `developmental_objective.primary_objective_id`. The objective still never generates the plot.
 
 If the brief says only “confidence,” sharpen it into Situation / Feeling / Belief / Strategy before you draw spreads. Pick a Family Code value it belongs to. Invent a portable phrase. Do not ask Alex to fill the template unless you would be locking a new series-wide definition.
 
@@ -112,6 +116,9 @@ Also mark:
 - Variety of setting and which brother owns the climax.
 - Fear/consent/Family Code physical-play rules apply.
 - Protect the magic. Do not outline a “SEL exercise.”
+- Obey packet `house_style` and `creator_preferences_relevant` (north stars, humour, pacing, things to avoid). Shape wants, jokes, and page turns to that shelf — not a generic picture-book cadence.
+- Use `engagement_notes` (including real-reread observations) when choosing participation, prediction, and reread juice.
+- Use `visual_style_relevant` so a beat that only works as a picture is actually a picture beat. Do not plan a look the visual bible has not locked.
 
 ## Output
 

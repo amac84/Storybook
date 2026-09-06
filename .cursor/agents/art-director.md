@@ -15,7 +15,7 @@ Serve rereading and competence: hide a clue the child can spot before the charac
 
 - `manuscript-final.md`
 - `outline-final.yaml`
-- `context-packet.yaml`
+- `context-packet.yaml` — use `visual_style_relevant` and any Visual-art bullets in `creator_preferences_relevant`; do not invent a look those fields have not locked
 - `bible/visual-style.md`
 - character `visual-rules.md` and any files in `characters/<id>/reference/`
 - `bible/fear-and-content-boundaries.md`

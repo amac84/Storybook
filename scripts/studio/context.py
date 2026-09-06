@@ -5,6 +5,15 @@ from datetime import datetime, timezone
 from typing import Any
 
 from .config import studio_meta
+from .curriculum import (
+    advise_candidates,
+    brief_objective_ids,
+    load_catalog,
+    load_coverage,
+    load_intentions,
+    objective_slice,
+    recent_coverage,
+)
 from .io import read_json, read_text, read_yaml, write_yaml
 from .paths import BIBLE, CANON, CHARACTERS, LEDGER, book_dir
 
@@ -33,6 +42,7 @@ def build_context(number: int) -> dict[str, Any]:
         "characters": [_character_slice(cid, fuller=(cid in ids["focus"])) for cid in ids["include"]],
         "relationships": _relevant_relationships(ids["include"]),
         "values": _values_slice(brief),
+        "curriculum": _curriculum_slice(brief),
         "world_rules_relevant": _extract_filled_sections(BIBLE / "world-rules.md"),
         "locations_relevant": _keyword_items(
             read_json(CANON / "locations.json").get("locations") or [],
@@ -63,6 +73,9 @@ def build_context(number: int) -> dict[str, Any]:
         ],
         "family_code": "bible/family-code.md",
         "creator_preferences_relevant": _taste_notes(),
+        "house_style": _extract_filled_sections(BIBLE / "writing-style.md"),
+        "visual_style_relevant": _extract_filled_sections(BIBLE / "visual-style.md"),
+        "engagement_notes": _extract_filled_sections(BIBLE / "engagement-principles.md"),
         "fear_and_content_constraints": _extract_filled_sections(
             BIBLE / "fear-and-content-boundaries.md"
         ),
@@ -162,6 +175,40 @@ def _values_slice(brief: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def _curriculum_slice(brief: dict[str, Any]) -> dict[str, Any]:
+    """Targeted curriculum context. A selected ID injects only its slice;
+    otherwise advisory candidates are offered. Free-text-only briefs get a
+    minimal, non-forcing block. Curriculum never dictates the plot."""
+    catalog = load_catalog()
+    coverage = load_coverage()
+    primary, secondary = brief_objective_ids(brief)
+
+    slice_out: dict[str, Any] = {
+        "selected_objective": None,
+        "secondary_objectives": [],
+        "advisory_candidates": [],
+        "recent_coverage": [
+            {
+                "book_number": e.get("book_number"),
+                "primary_objective_id": e.get("primary_objective_id"),
+                "exposure": e.get("exposure"),
+            }
+            for e in recent_coverage(coverage)
+        ],
+        "note": "Coverage is exposure, not mastery. Story first — curriculum informs the target only.",
+    }
+    if primary:
+        slice_out["selected_objective"] = objective_slice(primary, catalog, coverage)
+        slice_out["secondary_objectives"] = [
+            objective_slice(oid, catalog, coverage) for oid in secondary
+        ]
+    else:
+        slice_out["advisory_candidates"] = advise_candidates(
+            catalog, coverage, load_intentions(), limit=3
+        )
+    return slice_out
+
+
 def _value_block(bible: str, name: str) -> str | None:
     needle = name.strip().lower().replace(" ", "_")
     chunks = re.split(r"\n###\s+", bible)
@@ -228,14 +275,29 @@ def _older_canon(window: int, brief_text: str) -> list[dict[str, Any]]:
 
 
 def _taste_notes() -> list[str]:
+    """Bullets, numbered items, and pull-quotes under ## headings in creator-taste.md.
+
+    Paragraphs and the Change log table are ignored here; durable house voice
+    lives in writing-style.md and is compiled separately as house_style.
+    """
     text = read_text(BIBLE / "creator-taste.md")
     notes = []
     current = None
+    skip_headings = {"Change log"}
     for line in text.splitlines():
         if line.startswith("## "):
             current = line[3:].strip()
-        elif line.startswith("- ") and "(none recorded yet)" not in line:
+            continue
+        if current is None or current in skip_headings:
+            continue
+        if "(none recorded yet)" in line or "(none yet)" in line:
+            continue
+        if line.startswith("- "):
             notes.append(f"{current}: {line[2:].strip()}")
+        elif re.match(r"^\d+\.\s+", line):
+            notes.append(f"{current}: {re.sub(r'^\d+\.\s+', '', line).strip()}")
+        elif line.startswith(">") and line[1:].strip():
+            notes.append(f"{current}: {line[1:].strip()}")
     return notes
 
 
@@ -249,4 +311,18 @@ def _gaps(character_ids: list[str]) -> list[str]:
         gaps.append("Major world rules are placeholders — do not invent persistent metaphysics")
     if "[CREATOR INPUT REQUIRED]" in read_text(BIBLE / "values-and-principles.md"):
         gaps.append("Value definitions are placeholders — treat a briefed value as provisional")
+    if "[CREATOR INPUT REQUIRED]" in read_text(BIBLE / "writing-style.md"):
+        gaps.append(
+            "House style is incomplete — obey any filled writing-style sections; "
+            "do not invent a permanent voice to fill the rest"
+        )
+    if "[CREATOR INPUT REQUIRED]" in read_text(BIBLE / "visual-style.md"):
+        gaps.append(
+            "Visual style is incomplete — do not lock appearance, medium, or palette"
+        )
+    if not _taste_notes():
+        gaps.append(
+            "bible/creator-taste.md has no recorded bullets yet — north stars "
+            "and editorial likes/dislikes will not constrain this book until added"
+        )
     return gaps

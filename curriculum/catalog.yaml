@@ -1,0 +1,20 @@
+# Curriculum objective catalog.
+# NOT canon. NOT bible. See curriculum/README.md.
+#
+# Objectives are added only by Alex or with his approval — they constrain the series.
+# Each entry follows templates/curriculum-objective.yaml.
+# IDs are stable and never reused, format: OBJ-<domain>-<slug>, e.g. OBJ-courage-first-try.
+
+version: 1
+description: >
+  Stable developmental objectives the series may draw from. Empty until Alex
+  approves objectives. Do not invent entries to fill this file.
+
+domains: []
+# each:
+#   id: courage           # lowercase slug, unique
+#   label: Courage
+#   family_code_values: [courage]   # names from bible/values-and-principles.md
+
+objectives: []
+# each entry follows templates/curriculum-objective.yaml

@@ -9,7 +9,7 @@ When feedback arrives (“too cheesy”, “this sounds educational”, “love 
 1. Is this a one-off fix for this spread?
 2. Or a preference that should constrain future books?
 
-If (2), add a dated, concise bullet under the right heading. Prefer rules of thumb over transcripts.
+If (2), add a dated, concise bullet under the right heading. Prefer rules of thumb over transcripts. The packet compiler copies those bullets (plus numbered items and `>` pull-quotes) into every book’s `creator_preferences_relevant`. Durable house voice and sample sentences belong in `bible/writing-style.md`; they compile as `house_style`.
 
 Do not contradict a more specific, later note without marking the change.
 

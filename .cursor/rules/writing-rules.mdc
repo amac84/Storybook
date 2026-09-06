@@ -28,6 +28,7 @@ There is one owner of prose: the Showrunner, unless a later dedicated Author sub
 - Use exclamation marks sparingly. Do not ask a stack of rhetorical questions.
 - Avoid repetitive AI cadence: identical sentence stems, empty praise (“You’re so brave!”), and synonym-stuffed description.
 - Respect `bible/writing-style.md` and `bible/forbidden-patterns.md`.
+- If this book has a `context-packet.yaml`, obey its `house_style` and `creator_preferences_relevant`. Those are the compiled taste for this book.
 - If a field in the writing bible is `[CREATOR INPUT REQUIRED]`, keep prose simple, concrete, and unpretentious rather than inventing a house style.
 - The younger brother may be Eden or Mars on the page. Both are correct.
 - Do not state Cove’s or Eden/Mars’s ages in the story unless the brief is a birthday book.

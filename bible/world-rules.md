@@ -1,12 +1,12 @@
 # World rules
 
-Status: placeholders. Do not invent major metaphysics, technology, or dragon rules.
+Status: partial. Reality level, magic system, and home geography still open. Dragons locked off. Setting cadence and companions locked in principle.
 
 Any new persistent world rule in a manuscript is proposed canon and needs approval.
 
 ## reality_level
 
-[CREATOR INPUT REQUIRED]
+[CREATOR INPUT REQUIRED — Alex will describe the world]
 
 Is this naturalistic-with-wonder, soft magical realism, secret-magic-adjacent, or something else?
 
@@ -18,27 +18,38 @@ Phones, cars, lighthouses, radios, invented machines — what exists, what is an
 
 ## magic
 
-[CREATOR INPUT REQUIRED]
+[CREATOR INPUT REQUIRED — Alex will describe magic separately]
 
 Who can do it, what it costs, whether children can use it, whether it can solve a climax.
 
 ## dragons
 
-[CREATOR INPUT REQUIRED]
-
-Do dragons exist? Are they animals, people, rare, decorative, companions? Anatomy and scale belong here once decided, and in visual canon.
+No dragons. Do not introduce dragons as animals, people, companions, decoration, or myth-made-flesh.
 
 ## animals
 
-No household pets.
+**Cove / Mars / Mamma / Dad household:** no pets.
 
-Wild or story animals: [CREATOR INPUT REQUIRED] — talking or not, how much inner life, whether a creature may become a recurring companion.
+**Other households (locked):**
+
+- Grandpa Pete (with Granny): dog named **Bunny**
+- Aunty Hayley and Uncle Nate: two cats (names not locked — do not invent)
+
+Do not invent further permanent pets without Alex. No pet death (see fear bible).
+
+Companions: the boys will have companions. Specific companion identities are not yet locked — do not invent a permanent companion cast without Alex.
+
+Talking animals: [CREATOR INPUT REQUIRED] — undecided. Do not assume speech or deny it until Alex decides.
+
+Wild or other story animals beyond companions: still open.
 
 ## danger
 
 Play-danger and adventure tension are allowed. Hitting in anger is not. Boys do not hit girls, including in play.
 
 Protective force may appear only to prevent genuine harm. Restraint is valued above retaliation. Violence is never entertainment, revenge, or proof of masculinity.
+
+No weapons (see `bible/fear-and-content-boundaries.md`).
 
 Cross-check `bible/family-code.md` (Physical conflict and play) and `bible/fear-and-content-boundaries.md`.
 
@@ -56,7 +67,20 @@ Dad sometimes leaves for work and always comes back.
 
 ## travel
 
-Same-book return. No multi-day unexplained absences. Other travel (boats, islands, invented places) is still [CREATOR INPUT REQUIRED] at the world-logic level. The home setting itself is invented; details forthcoming. Do not name a town until Alex supplies it.
+Same-book return. No multi-day unexplained absences.
+
+**Setting cadence (locked):** the series runs like TV seasons. Each **season = 6 books** (episodes). Within a season, the boys share one primary place — like staying in the same town for a season. A new season may open a new primary place (season 2, episode 1 energy), unless Alex keeps the same place.
+
+Do not hop primary settings mid-season. Within a season, day trips or short same-book excursions may still be invented once travel flavour is filled.
+
+Season map (until revised):
+- Season 1 = books 001–006
+- Season 2 = books 007–012
+- and so on
+
+The home setting itself is invented; details forthcoming. Do not name a town until Alex supplies it.
+
+Boats, islands, and other invented places as *primary* settings: only at a season boundary (or with explicit Alex direction).
 
 ## fantasy_logic
 

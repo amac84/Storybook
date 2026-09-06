@@ -1,7 +1,7 @@
 # Engagement principles
 
 Status: starting set. Improve this file as real children react to real books.
-Do not force every principle into every book. Variety matters.
+Do not force every principle into every book. Variety matters. Compiled into each book’s packet as `engagement_notes`.
 
 ## What children should frequently experience
 

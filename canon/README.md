@@ -19,6 +19,7 @@ Approved continuity lives here. Drafts may only **propose** facts.
 - **Temporary story state** — `books/NNN/art/visual-state.yaml` and the book report
 - **Visual incidental** — in art direction / images only
 - **Proposed canon** — `books/NNN/proposed-canon.yaml`
+- **Curriculum record** — `curriculum/` (NOT here). Canon holds story continuity only. A book's `primary_value` in the ledger is a human-readable summary; objective coverage authority is `curriculum/coverage-ledger.json`, and coverage is never a story fact or character mastery.
 
 ## Updates
 

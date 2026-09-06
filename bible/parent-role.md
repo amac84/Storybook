@@ -9,19 +9,17 @@ In the house:
 - **Mamma** — first name not given; called Mamma in the family.
 - **Dad** — first name not given; called Dad in the family. Goes away for work sometimes; always comes back. Do not treat a work trip as abandonment.
 
-Grandparents (pairings not locked):
+Grandparents (pairings locked):
 
-- Nanna
-- Grandpa
-- Granny
-- Grandpa Pete
+- Nanna and Grandpa
+- Granny and Grandpa Pete (dog: **Bunny**)
 
 Other adults who exist and may recur. They do not have to appear in every book:
 
 - Uncle Holton and Uncle Jamie (gay, artistic). Never a punchline or a sermon.
 - Aunty Andria and Uncle Andrei — the **Popovicis**, Alex’s sister’s family (parents of Anya, Adrien, Asher). Books that include this household may be religious.
-- Aunty Hero and Uncle Connor (no children named).
-- Aunty Hayley and Uncle Nate (parents of Archer, Ashton, Arlo).
+- Aunty Hero and Uncle Connor (parents of cousin Mars — girl, same age and first name as Mars/Eden).
+- Aunty Hayley and Uncle Nate (parents of Archer 13, Ashton 10, Arlo 7 — all boys; two cats, names not locked).
 
 Full tree: `characters/family.md`.
 

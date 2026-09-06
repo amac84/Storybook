@@ -1,0 +1,22 @@
+# Studio curriculum intentions — advisory planning only. NOT canon.
+# Written by Alex directly, or by the Series Editor during series reviews.
+# Consumed by scripts/curriculum-status.py and context building as *hints*.
+# Story-first always wins; nothing here forces a brief.
+
+version: 1
+
+priorities: []
+# each:
+#   objective_id: OBJ-...
+#   reason: why this should come up soon
+#   requested_by: alex | series-editor
+#   after_book: null        # optional: not before this book number
+
+deferrals: []
+# each:
+#   objective_id: OBJ-...
+#   reason: why to wait (age fit, recency, saturation)
+#   until_book: null        # optional: revisit at/after this book number
+
+spacing_notes: []
+# free-text observations, e.g. "confidence appeared in 3 of the last 4 books"

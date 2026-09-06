@@ -14,6 +14,7 @@ Classify every fact:
 - **Temporary story state**: true during this book only. Expires at approval unless promoted.
 - **Visual incidental detail**: illustration-only unless promoted.
 - **Proposed canon**: appears in a manuscript or image and might persist. Lives in the book folder until approval.
+- **Curriculum record**: persistent studio planning memory under `curriculum/` — objective catalog, approval-only coverage, and intentions. Operational, never canonical. A coverage entry means an approved book *depicted* an objective; it is never a story fact or a claim of mastery, and it never flows into `canon/` or character state.
 
 Rules:
 
@@ -24,4 +25,6 @@ Rules:
 - New locations, named characters, capabilities, and world rules are proposed canon.
 - After human approval, update ledger, timeline, relationships, character state, recurring elements, threads, locations, and decisions through `workflows/update-canon.md`.
 - Never edit `canon/` as a convenience during drafting.
+- Curriculum linkage is optional per book. When a brief names a `primary_objective_id`, it must resolve exactly in `curriculum/catalog.yaml`. Coverage records are written only by `scripts/archive-book.py` after human approval. Do not route curriculum through `proposed-canon.yaml`.
+- Objectives are added to `curriculum/catalog.yaml` only by Alex or with his approval — they constrain the series like bible content.
 - If a story needs a fact that would constrain the whole series and the bible is still a placeholder, escalate one question.

@@ -25,6 +25,7 @@ paths:
   books: books
   templates: templates
   workflows: workflows
+  curriculum: curriculum
 
 quality_gates:
   engagement_score_minimum: 85

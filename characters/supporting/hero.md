@@ -9,7 +9,7 @@ first_appearance: null
 relationship_to_cove: aunt
 relationship_to_mars: aunt
 partner: connor
-one_line: Aunty Hero. Partner of Uncle Connor. No children named.
+one_line: Aunty Hero. Partner of Uncle Connor. Mother of cousin Mars (girl, same age as Mars/Eden).
 personality_notes: "[CREATOR INPUT REQUIRED]"
 visual_notes: "[CREATOR INPUT REQUIRED]"
 must_not:

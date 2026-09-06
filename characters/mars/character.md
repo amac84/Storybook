@@ -40,7 +40,8 @@ Younger brother of Cove. Prefers Eden; also likes Mars.
 
 - Parents in the house: Mamma, Dad.
 - Brother: Cove (older; birthday 25 September).
-- Grandparents: Nanna, Grandpa, Granny, Grandpa Pete (pairings not locked).
+- Grandparents: Nanna and Grandpa; Granny and Grandpa Pete.
+- Cousin Mars (Hero & Connor’s daughter): girl, same age, same first name — see `characters/family.md`.
 - Wider family: see `characters/family.md`.
 - Home: invented world. Specifics not yet supplied. Do not invent a town name.
 - Pets: none.
