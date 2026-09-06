@@ -12,6 +12,7 @@ SCRIPTS = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPTS))
 
 from studio.canon import archive_approved  # noqa: E402
+from studio.curriculum import record_delivery, validate_book_linkage  # noqa: E402
 from studio.paths import parse_book_ref  # noqa: E402
 
 
@@ -28,6 +29,17 @@ def main() -> int:
         raise SystemExit("Refusing to archive. Pass --approved after human approval.")
 
     number = parse_book_ref(args.book)
+
+    # Preflight optional curriculum linkage before any writes happen.
+    linkage_failures, linkage_warnings = validate_book_linkage(number)
+    if linkage_failures:
+        for failure in linkage_failures:
+            print(f"curriculum: {failure}", file=sys.stderr)
+        print("Fix curriculum linkage (or remove the IDs) before archiving.", file=sys.stderr)
+        return 2
+    for warning in linkage_warnings:
+        print(f"curriculum warning: {warning}")
+
     try:
         summary = archive_approved(number)
     except PermissionError as exc:
@@ -35,6 +47,16 @@ def main() -> int:
         return 2
     print(f"Canon updated from book {number:03d}: {summary.get('title') or '(untitled)'}")
     print(json.dumps({"new_canon": summary.get("new_canon"), "approved_at": summary.get("approved_at")}, indent=2))
+
+    # Separate, non-canonical write: curriculum delivery record (idempotent).
+    entry = record_delivery(number)
+    if entry:
+        print(
+            f"Curriculum coverage recorded: {entry['primary_objective_id']} "
+            f"({entry['exposure']}) for book {number:03d}"
+        )
+    else:
+        print("No curriculum linkage declared; coverage ledger unchanged.")
     return 0
 
 

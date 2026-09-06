@@ -15,6 +15,7 @@ Failed images are eligible for automatic regeneration.
 - the spread’s art direction
 - approved character references when they exist
 - `bible/visual-style.md` and character visual rules
+- the book’s `context-packet.yaml` `visual_style_relevant` and Visual-art taste bullets, when present
 - `art/visual-state.yaml` at that spread
 - previous spreads in this book (continuity)
 - fear/content boundaries

@@ -2,6 +2,8 @@
 
 Status: placeholder house style. Fill this before Book 1 if possible.
 
+Filled sections are compiled into each book’s context packet as `house_style`. The Story Architect and Editorial Critic must use that field.
+
 ## Read-aloud
 
 [CREATOR INPUT REQUIRED]

@@ -1,6 +1,6 @@
 # Fear and content boundaries
 
-Status: scaffold. Do not invent extreme content. Leave the dials for Alex.
+Status: partial. Death and weapons locked. Danger, suspense, monsters, injury, and emotional dials still open — stay conservative until Alex fills them.
 
 When a brief would exceed a filled boundary, escalate. When a boundary is still a placeholder, stay conservative: tension is allowed, horror is not, and safety returns on the page.
 
@@ -40,9 +40,7 @@ Starter conservative default: scrapes and scares, no graphic injury.
 
 ## death
 
-[CREATOR INPUT REQUIRED]
-
-Starter conservative default: no character death. There are no household pets to kill. Do not introduce a pet death.
+No death. No character death, no pet death, no offstage death used for stakes. Cove and Mars’s household has no pets; relatives’ animals (Bunny; Hayley/Nate’s cats) still must never be killed or used as death-stakes. Do not introduce a creature only to kill it.
 
 ## villains
 
@@ -52,9 +50,7 @@ If antagonists appear, they need a comprehensible want. Cartoon evil is not the 
 
 ## weapons
 
-[CREATOR INPUT REQUIRED]
-
-Starter conservative default: no real guns; story tools (ropes, lanterns, oars) are fine.
+No weapons. No guns, swords, knives-as-weapons, bows, or toy/story weapons framed as fighting gear. Story tools that are not weapons (ropes, lanterns, oars, sticks used as tools) remain fine unless a scene would read as armed combat — then rewrite.
 
 ## frightening_imagery
 
@@ -80,6 +76,8 @@ Until changed:
 - realistic torture
 - hate toward a real-world group
 - encouraging dangerous real-world imitation without a safe frame
+- character death (any form)
+- weapons
 
 ## Notes
 

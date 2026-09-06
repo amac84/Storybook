@@ -34,7 +34,7 @@ Cove is the older of two brothers. His younger brother is Mars, who prefers to b
 
 - Parents in the house: Mamma, Dad.
 - Brother: Mars / Eden (younger; birthday 28 November).
-- Grandparents: Nanna, Grandpa, Granny, Grandpa Pete (pairings not locked).
+- Grandparents: Nanna and Grandpa; Granny and Grandpa Pete.
 - Wider family: see `characters/family.md`.
 - Home: invented world. Specifics not yet supplied. Do not invent a town name.
 - Pets: none.

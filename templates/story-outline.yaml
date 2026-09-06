@@ -25,6 +25,9 @@ developmental_objective:
   strategy: null
   family_code_value: null
   objective_one_sentence: null
+  # Optional: stable ID from curriculum/catalog.yaml if the brief named one.
+  # Story first — the objective grows out of the trouble, never the reverse.
+  primary_objective_id: null
 
 portable_phrase: null
 

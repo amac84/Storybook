@@ -25,6 +25,16 @@ suggested_real_life_probe: null
 character_development: []
 potential_new_canon: []
 
+# Optional curriculum linkage (mirrors brief IDs; validated when present).
+# Recorded to curriculum/coverage-ledger.json only after human approval.
+# Exposure is depicted | rehearsed | transferred — never "mastered".
+curriculum:
+  primary_objective_id: null
+  secondary_objective_ids: []
+  exposure: null
+  delivery_evidence: []
+  # e.g. "Spread 09: Mars tries the strategy alone after the setback"
+
 quality_gates:
   passed: false
   failures: []

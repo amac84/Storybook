@@ -4,6 +4,7 @@ from pathlib import Path
 from typing import Any
 
 from .config import quality_gates
+from .curriculum import validate_book_linkage
 from .io import read_yaml
 from .manuscript import validate_manuscript
 from .paths import book_dir
@@ -70,6 +71,16 @@ def evaluate(number: int, stage: str = "manuscript") -> dict[str, Any]:
         proposed = read_yaml(book / "proposed-canon.yaml") or {}
         checks["proposed_canon_items"] = len(proposed.get("items") or [])
 
+        # Optional curriculum linkage: absence is always valid; invalid IDs fail.
+        curriculum_failures, curriculum_warnings = validate_book_linkage(number)
+        failures.extend(curriculum_failures)
+        warnings.extend(curriculum_warnings)
+        checks["curriculum_linkage"] = (
+            "none"
+            if not curriculum_failures and not curriculum_warnings and not _has_linkage(book)
+            else ("invalid" if curriculum_failures else "ok")
+        )
+
     if stage in ("illustration", "approval"):
         if not (book / "art" / "direction.yaml").exists():
             failures.append("Missing art/direction.yaml")
@@ -87,6 +98,18 @@ def evaluate(number: int, stage: str = "manuscript") -> dict[str, Any]:
 
     passed = not failures
     return _result(passed, failures, warnings, checks, editorial_path, editorial)
+
+
+def _has_linkage(book: Path) -> bool:
+    brief = read_yaml(book / "brief.yaml") or {}
+    report = read_yaml(book / "book-report.yaml") or {}
+    report_block = report.get("curriculum") or {}
+    return bool(
+        brief.get("primary_objective_id")
+        or brief.get("secondary_objective_ids")
+        or report_block.get("primary_objective_id")
+        or report_block.get("secondary_objective_ids")
+    )
 
 
 def _score_gates(

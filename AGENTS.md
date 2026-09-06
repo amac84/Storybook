@@ -91,6 +91,7 @@ Read only what you need. Prefer compiled packets over raw dumps.
 | Learned taste | `bible/creator-taste.md` |
 | Character facts | `characters/<id>/` |
 | Approved continuity | `canon/` |
+| Curriculum planning (objectives, coverage, intentions — NOT canon) | `curriculum/` |
 | How to run a book | `workflows/create-book.md` |
 | Autonomy / escalation | `.cursor/rules/autonomy-rules.mdc` |
 | Studio defaults | `studio.yaml` |
@@ -123,9 +124,9 @@ Follow `workflows/create-book.md`. Condensed:
 1. Receive direction from Alex.
 2. Scaffold the book with `python3 scripts/new-book.py` or the equivalent file creation.
 3. Write a structured `brief.yaml`. Use only fields that matter.
-4. Sharpen a broad goal into Situation / Feeling / Belief / Strategy and one Family Code value.
-5. Canon Keeper compiles `context-packet.yaml`.
-6. Story Architect produces `outline-v1.yaml` — story first, then invisible curriculum.
+4. Sharpen a broad goal into Situation / Feeling / Belief / Strategy and one Family Code value. Optionally bind the brief to a stable `primary_objective_id` from `curriculum/catalog.yaml`; free-text goals remain fully supported.
+5. Canon Keeper compiles `context-packet.yaml` (includes a targeted curriculum slice when an objective ID is named, or advisory candidates when not, plus house style, creator-taste, visual style, and engagement notes).
+6. Story Architect produces `outline-v1.yaml` — story first, then invisible curriculum, constrained by packet taste.
 7. You evaluate the architecture against `bible/story-design-principles.md` (story-without-lesson, portable phrase, setback, transfer, ending that shows). If weak, revise automatically and save `outline-v2.yaml` or later. Lock `outline-final.yaml`.
 8. Write `manuscript-v1.md` as spread-based picture-book text.
 9. Editorial Critic produces `editorial-v1.yaml` using the Standard table.
@@ -140,7 +141,7 @@ Follow `workflows/create-book.md`. Condensed:
 18. Visual QA every image. Failed images may regenerate automatically.
 19. Assemble the review package. Write `book-report.yaml` including portable phrase and one outside-the-book probe.
 20. Present a concise human review. Do not paste the entire editorial process.
-21. After approval, run `workflows/approve-book.md` and `python3 scripts/archive-book.py NNN --approved`.
+21. After approval, run `workflows/approve-book.md` and `python3 scripts/archive-book.py NNN --approved`. The archive script also writes the book's curriculum delivery record to `curriculum/coverage-ledger.json` (a separate, non-canonical store) when the book declared objective IDs.
 
 Never skip the second editorial pass because the first draft felt good.
 
@@ -232,6 +233,7 @@ See `.cursor/rules/autonomy-rules.mdc`.
 - **Temporary story state**: true for this book only, e.g. mud on a knee.
 - **Visual incidental detail**: exists in an illustration unless promoted.
 - **Proposed canon**: a new persistent fact in a manuscript or image. Not authoritative until approval.
+- **Curriculum record**: persistent studio planning memory in `curriculum/`. Never a story fact, never character mastery, never routed through proposed canon. Coverage terms are depicted / rehearsed / transferred.
 
 Do not let characters spontaneously change personality, appearance, history, relationships, possessions, capabilities, fears, preferences, or established facts.
 
@@ -256,7 +258,10 @@ Each book gets a packet containing:
 7. richer summaries of the previous six approved books
 8. only relevant older canon
 9. writing principles
-10. creator preferences relevant to this story
+10. house style from `bible/writing-style.md` (`house_style`)
+11. creator preferences from `bible/creator-taste.md` (`creator_preferences_relevant`)
+12. visual style from `bible/visual-style.md` (`visual_style_relevant`)
+13. engagement / real-reread notes (`engagement_notes`)
 
 Use `python3 scripts/build-context.py NNN` and then trim or enrich by hand if the packet is too fat or too thin.
 
@@ -266,7 +271,9 @@ Use `python3 scripts/build-context.py NNN` and then trim or enrich by hand if th
 
 When Alex gives feedback, decide whether it is a one-off correction or a generalizable preference.
 
-If generalizable, propose a concise addition to `bible/creator-taste.md` under the right heading. Do not record every trivial line edit.
+If generalizable, propose a concise addition to `bible/creator-taste.md` under the right heading **as a markdown bullet** (the packet compiler only slurp bullets, numbered items, and `>` pull-quotes). Do not record every trivial line edit.
+
+Durable house voice (read-aloud, POV, sample sentences that feel right/wrong) goes in `bible/writing-style.md`. The look goes in `bible/visual-style.md`. What real children did on reread goes in `bible/engagement-principles.md`. All three are compiled into the context packet; the Story Architect and Editorial Critic must use those fields, not only the Showrunner.
 
 Examples of generalizable notes: “too cheesy”, “this sounds educational”, “Mars wouldn’t say that”, “don’t have adults explain the lesson”, “more adventurous”.
 

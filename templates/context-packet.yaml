@@ -25,6 +25,14 @@ values:
   secondary: []
   definitions: []
 
+curriculum:
+  # Targeted slice, only when the brief names a primary_objective_id.
+  # Advisory candidates appear when it does not. Never a catalog dump.
+  selected_objective: null
+  secondary_objectives: []
+  advisory_candidates: []
+  recent_coverage: []
+
 world_rules_relevant: []
 locations_relevant: []
 recurring_elements_relevant: []
@@ -49,6 +57,16 @@ writing_principles:
   - Child agency at the resolution
 
 creator_preferences_relevant: []
+# bullets / numbered notes / pull-quotes from bible/creator-taste.md
+
+house_style: []
+# filled sections from bible/writing-style.md (read-aloud, narration, samples)
+
+visual_style_relevant: []
+# filled sections from bible/visual-style.md — for beats pictures must carry
+
+engagement_notes: []
+# bible/engagement-principles.md including Notes from real rereads
 
 fear_and_content_constraints: []
 

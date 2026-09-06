@@ -28,6 +28,12 @@ portable_phrase: null
 
 primary_value: null
 secondary_value: null
+
+# Optional curriculum linkage — stable IDs from curriculum/catalog.yaml.
+# Leave null/empty to use free-text goal/values only (fully supported).
+# The objective informs the developmental target; it never dictates the plot.
+primary_objective_id: null
+secondary_objective_ids: []
 story_goal: null
 characters_required: []
 adventure_seed: null

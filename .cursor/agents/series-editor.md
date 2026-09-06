@@ -17,6 +17,7 @@ You evaluate the series as a whole. You do not rewrite old books unless Alex exp
 - `canon/character-state.json`
 - `canon/open-story-threads.json`
 - `canon/recurring-elements.json`
+- `curriculum/coverage-ledger.json` and `curriculum/intentions.yaml` (or `python3 scripts/curriculum-status.py`) — the authority for objective coverage; do not infer coverage from ledger strings alone
 - `bible/values-and-principles.md`
 - `bible/creator-taste.md`
 - `bible/forbidden-patterns.md`
@@ -59,5 +60,7 @@ Include:
 - `do_not_rewrite` list
 
 Recommend future briefs. Do not assign yourself as author.
+
+Write objective-coverage recommendations (priorities, deferrals, spacing notes) into `curriculum/intentions.yaml`. They are advisory planning hints, not canon, and coverage is exposure — never a claim that the boys have mastered anything.
 
 Update `canon/series-ledger.json` field `last_series_review_after_book`.

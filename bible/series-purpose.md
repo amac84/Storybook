@@ -7,7 +7,7 @@ Status: purpose locked from the McAulay Family Code. Brand/title still open.
 - Working title: Cove and Mars
 - Creator: Alex (McAulay)
 - Initial audience: two brothers — Cove (older) and the younger brother, called Eden and Mars on the page
-- Home: invented (details later). No pets.
+- Home: invented (details later). No pets in Cove and Mars’s house. Grandpa Pete has dog Bunny; Hayley and Nate have two cats.
 - Possible later audience: a broader published children’s series
 - Form: illustrated picture books, designed spread-by-spread
 - Governing code: `bible/family-code.md`
