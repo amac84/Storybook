@@ -1,0 +1,80 @@
+[
+  {
+    "case": "missing_qa_and_zero_images",
+    "passed": true,
+    "failures": [],
+    "warnings": [
+      "Visual QA has not been recorded (acceptable if no images yet)"
+    ],
+    "approved_image_count": 0
+  },
+  {
+    "case": "qa_pass_zero_images_and_empty_direction",
+    "passed": true,
+    "failures": [],
+    "warnings": [],
+    "approved_image_count": 0
+  },
+  {
+    "case": "lowercase_fail",
+    "passed": true,
+    "failures": [],
+    "warnings": [
+      "Visual QA is not PASS"
+    ],
+    "approved_image_count": 0
+  },
+  {
+    "case": "qa_pending",
+    "passed": true,
+    "failures": [],
+    "warnings": [
+      "Visual QA is not PASS"
+    ],
+    "approved_image_count": 0
+  },
+  {
+    "case": "uppercase_fail_control",
+    "passed": false,
+    "failures": [
+      "Visual QA is FAIL"
+    ],
+    "warnings": [],
+    "approved_image_count": 0
+  },
+  {
+    "case": "uppercase_fail_with_override",
+    "passed": true,
+    "failures": [],
+    "warnings": [
+      "OVERRIDE visual_qa: Visual QA is FAIL \u2014 Test override"
+    ],
+    "approved_image_count": 0
+  },
+  {
+    "case": "qa_nonmapping",
+    "exception": "AttributeError",
+    "message": "'list' object has no attribute 'get'"
+  },
+  {
+    "case": "top_level_pass_missing_and_failed_image_record",
+    "passed": true,
+    "failures": [],
+    "warnings": [],
+    "approved_image_count": 0
+  },
+  {
+    "case": "archive_cli_bypasses_approval_gate",
+    "validation_passed": false,
+    "validation_failures": [
+      "No manuscript-v1/v2/final.md found",
+      "No editorial-vN.yaml found",
+      "Missing art/direction.yaml"
+    ],
+    "archive_returncode": 0,
+    "archive_stdout": "Canon updated from book 992: Disposable archive bypass fixture\n{\n  \"new_canon\": [],\n  \"approved_at\": \"2026-09-05\"\n}\nNo curriculum linkage declared; coverage ledger unchanged.",
+    "archive_stderr": "",
+    "ledger_books_approved": 1,
+    "ledger_contains_fixture": true
+  }
+]

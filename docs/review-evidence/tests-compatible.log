@@ -1,0 +1,48 @@
+test_deferrals_excluded_and_retired_excluded (test_curriculum.AdvisoryTests.test_deferrals_excluded_and_retired_excluded) ... ok
+test_empty_catalog_gives_no_candidates (test_curriculum.AdvisoryTests.test_empty_catalog_gives_no_candidates) ... ok
+test_never_depicted_with_met_prereqs_ranks_first (test_curriculum.AdvisoryTests.test_never_depicted_with_met_prereqs_ranks_first) ... ok
+test_priorities_outrank_recency (test_curriculum.AdvisoryTests.test_priorities_outrank_recency) ... ok
+test_ranking_is_deterministic (test_curriculum.AdvisoryTests.test_ranking_is_deterministic) ... ok
+test_bad_exposure_fails (test_curriculum.BookLinkageTests.test_bad_exposure_fails) ... ok
+test_brief_report_mismatch_fails (test_curriculum.BookLinkageTests.test_brief_report_mismatch_fails) ... ok
+test_no_linkage_always_valid (test_curriculum.BookLinkageTests.test_no_linkage_always_valid) ... ok
+test_primary_equals_secondary_fails (test_curriculum.BookLinkageTests.test_primary_equals_secondary_fails) ... ok
+test_retired_objective_warns (test_curriculum.BookLinkageTests.test_retired_objective_warns) ... ok
+test_unknown_id_fails (test_curriculum.BookLinkageTests.test_unknown_id_fails) ... ok
+test_bad_id_format (test_curriculum.CatalogValidationTests.test_bad_id_format) ... ok
+test_duplicate_ids (test_curriculum.CatalogValidationTests.test_duplicate_ids) ... ok
+test_empty_catalog_is_valid (test_curriculum.CatalogValidationTests.test_empty_catalog_is_valid) ... ok
+test_prerequisite_cycle (test_curriculum.CatalogValidationTests.test_prerequisite_cycle) ... ok
+test_unknown_domain (test_curriculum.CatalogValidationTests.test_unknown_domain) ... ok
+test_unknown_prerequisite (test_curriculum.CatalogValidationTests.test_unknown_prerequisite) ... ok
+test_valid_catalog (test_curriculum.CatalogValidationTests.test_valid_catalog) ... ok
+test_free_text_brief_gets_advisory_only (test_curriculum.ContextInjectionTests.test_free_text_brief_gets_advisory_only) ... ok
+test_selected_objective_injected (test_curriculum.ContextInjectionTests.test_selected_objective_injected) ... ok
+test_duplicate_book_entries (test_curriculum.CoverageValidationTests.test_duplicate_book_entries) ... ok
+test_unknown_objective_and_bad_exposure (test_curriculum.CoverageValidationTests.test_unknown_objective_and_bad_exposure) ... ok
+test_valid_coverage (test_curriculum.CoverageValidationTests.test_valid_coverage) ... ok
+test_idempotent_rearchive_replaces_entry (test_curriculum.RecordDeliveryTests.test_idempotent_rearchive_replaces_entry) ... ok
+test_invalid_linkage_blocks_recording (test_curriculum.RecordDeliveryTests.test_invalid_linkage_blocks_recording) ... ok
+test_never_touches_canon (test_curriculum.RecordDeliveryTests.test_never_touches_canon)
+record_delivery writes only the coverage path it is given. ... ok
+test_no_linkage_returns_none_and_writes_nothing (test_curriculum.RecordDeliveryTests.test_no_linkage_returns_none_and_writes_nothing) ... ok
+test_records_approved_delivery (test_curriculum.RecordDeliveryTests.test_records_approved_delivery) ... ok
+test_refuses_without_approval (test_curriculum.RecordDeliveryTests.test_refuses_without_approval) ... ok
+test_curriculum_stores_exist_and_are_empty (test_curriculum.RepoStoreTests.test_curriculum_stores_exist_and_are_empty) ... ok
+test_exact_resolution (test_curriculum.ResolutionTests.test_exact_resolution) ... ok
+test_slice_for_known_objective (test_curriculum.ResolutionTests.test_slice_for_known_objective) ... ok
+test_slice_for_unknown_objective (test_curriculum.ResolutionTests.test_slice_for_unknown_objective) ... ok
+test_slice_prereq_met_and_history (test_curriculum.ResolutionTests.test_slice_prereq_met_and_history) ... ok
+test_unknown_returns_none_no_fuzzy_match (test_curriculum.ResolutionTests.test_unknown_returns_none_no_fuzzy_match) ... ok
+test_gaps_flag_empty_taste (test_studio.ContextTasteTests.test_gaps_flag_empty_taste) ... ok
+test_house_style_compiles_writing_bible (test_studio.ContextTasteTests.test_house_style_compiles_writing_bible) ... ok
+test_taste_notes_skip_empty_placeholders (test_studio.ContextTasteTests.test_taste_notes_skip_empty_placeholders) ... ok
+test_missing_heading (test_studio.ManuscriptTests.test_missing_heading) ... ok
+test_valid_spreads (test_studio.ManuscriptTests.test_valid_spreads) ... ok
+test_no_book_one_yet (test_studio.RepoShapeTests.test_no_book_one_yet) ... ok
+test_required_trees (test_studio.RepoShapeTests.test_required_trees) ... ok
+
+----------------------------------------------------------------------
+Ran 42 tests in 0.251s
+
+OK
